@@ -9,7 +9,7 @@ if(navigator.serviceWorker){
     if(url.includes('localhost')){
         swLocation = '/utilities/PWA/test/06-twittor/sw.js';
     }
-     navigator.serviceWorker.register('/utilities/PWA/test/06-twittor/sw.js');
+     navigator.serviceWorker.register(swLocation);
 }
 
 
