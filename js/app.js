@@ -1,7 +1,15 @@
 
+var url = window.location.hre;
+
+var swLocation = '/utilities/sw.js';
+
 
 if(navigator.serviceWorker){
-    navigator.serviceWorker.register('/utilities/PWA/test/06-twittor/sw.js');
+    
+    if(url.includes('localhost')){
+        swLocation = '/utilities/PWA/test/06-twittor/sw.js';
+    }
+     navigator.serviceWorker.register('/utilities/PWA/test/06-twittor/sw.js');
 }
 
 
