@@ -1,5 +1,5 @@
 
-var url = window.location.hre;
+var url = window.location.href;
 
 var swLocation = '/utilities/sw.js';
 
